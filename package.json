@@ -21,8 +21,9 @@
   },
   "homepage": "https://github.com/gregrickaby/npm-scripts-boilerplate#readme",
   "main": "src/js/app.js",
-  "dependencies": {},
   "devDependencies": {
+    "jquery": "3.3.1",
+    "popper.js": "1.14.7",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-regular-svg-icons": "^5.10.2",
@@ -43,7 +44,7 @@
     "stylelint-config-recommended": "^2.2.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "^1.3.0",
-    "uglify-js": "^3.6.0"
+    "uglify-es": "^3.3.9"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -51,7 +52,7 @@
     "scss": "node-sass src/scss/app.scss -o dist/css",
     "lint": "eslint src/js || true",
     "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
-    "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js",
+    "uglify": "mkdirp dist/js -p && uglifyjs node_modules/jquery/dist/jquery.slim.js node_modules/popper.js/dist/popper.js node_modules/bootstrap/dist/js/bootstrap.js -m -o dist/js/app.js && uglifyjs dist/js/app.js -m -c -o dist/js/app.min.js",
     "imagemin": "imagemin src/images/* -o dist/images",
     "icons": "svgo -f src/images/icons -o dist/images/icons && svg-sprite-generate -d dist/images/icons -o dist/images/icons/sprite.svg",
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
