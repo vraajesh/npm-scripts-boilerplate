@@ -1,200 +1,179 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en" class="no-js">
+	<head>
+		<link rel="stylesheet" href="dist/css/app.css" />
+	</head>
 
-<head>
-	<link rel="stylesheet" href="dist/css/app.css" />
-</head>
-
-<body>
-
-	<div class="card">
-		<nav class="card-header">
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Loan Review</h3>
-					<h6>TCS Group - <span class="badge badge-primary">XX99SSS0000</span> </h6>
-				</div>
-				<div class="col-md-6">
-					<div class="float-right">
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Approve
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">Disapprove</a>
-								<a class="dropdown-item" href="#">Rework</a>
-							</div>
-							<button type="button" class="btn btn-secondary">Forward</button>
-							<button type="button" class="btn btn-primary">Approve</button>
-						</div>
+	<body>
+		<div class="card">
+			<nav class="card-header">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Loan Review</h3>
+						<h6>TCS Group - <span class="badge badge-primary">XX99SSS0000</span></h6>
 					</div>
-
-				</div>
-			</div>
-		</nav>
-
-		<div class="card-body">
-			<div class="card mb-3">
-				<div class="card-header">
-						<div class="row">
-								<div class="col-md-6">
-									<h5>Biography</h5>
+					<div class="col-md-6">
+						<div class="float-right">
+							<div class="dropdown">
+								<button
+									class="btn btn-secondary dropdown-toggle"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Approve
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Disapprove</a>
+									<a class="dropdown-item" href="#">Rework</a>
 								</div>
-								<div class="col-md-6">
-									<div class="float-right">
-										<a href="#">Credit History</a>
-									</div>
-								</div>
-							</div>
-				</div>
-				<div class="card-body">
-					<ul class="list-group">
-						<form>
-							<li class="list-group-item">
-								<div class="form-group row">
-									<label for="staticEmail" class="col-sm-2 col-form-label">Name: </label>
-									<div class="col-sm-10">
-										<input type="text" readonly class="form-control-plaintext" id="staticEmail"
-											value="Sathish">
-									</div>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="form-group row">
-									<label for="agelabel" class="col-sm-2 col-form-label">Age:</label>
-									<div class="col-sm-10">
-										<input type="text" readonly class="form-control-plaintext" id="agelabel"
-											value="33">
-									</div>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="form-group row">
-									<label for="createlabel" class="col-sm-2 col-form-label">Created on:</label>
-									<div class="col-sm-10">
-										<input type="text" readonly class="form-control-plaintext" id="createlabel"
-											value="4th Aug 2019">
-									</div>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="form-group row">
-									<label for="introlabel" class="col-sm-2 col-form-label">Intro by:</label>
-									<div class="col-sm-10">
-										<input type="text" readonly class="form-control-plaintext" id="introlabel"
-											value="Rajesh">
-									</div>
-								</div>
-							</li>
-							<li class="list-group-item">
-								<div class="form-group row">
-									<label for="introlabel" class="col-sm-2 col-form-label">Verification:</label>
-									<div class="col-sm-10">
-										<input type="text" readonly class="form-control-plaintext" id="introlabel"
-											value="Pending">
-									</div>
-								</div>
-							</li>
-						</form>
-					</ul>
-				</div>
-			</div>
-
-
-			<div class="card mb-3">
-				<div class="card-header">
-					<div class="row align-items-center">
-						<div class="col-md-6">
-							List of Previous Loans
-						</div>
-						<div class="col-md-6">
-							<div class="float-right">
-								<input type="email" class="form-control" id="exampleFormControlInput1"
-									placeholder="Search">
+								<button type="button" class="btn btn-secondary">Forward</button>
+								<button type="button" class="btn btn-primary">Approve</button>
 							</div>
 						</div>
 					</div>
-
-
-
 				</div>
-				<div class="card-body">
-					<table class="table table-bordered table-striped">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
+			</nav>
+
+			<div class="scroll-example">
+				<div class="row">
+					<div class="col-md-9">
+							<div class="card-body" data-spy="scroll" data-target="#sideNav-rgt" data-offset="0">
+									<div class="card mb-3">
+										<div class="card-header">
+											<div class="row">
+												<div class="col-md-6">
+													<h5 id="item-1">Biography</h5>
+												</div>
+												<div class="col-md-6">
+													<div class="float-right">
+														<a href="#">Credit History</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-body">
+											<form>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+													<div class="col-sm-10">
+														<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" />
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+													<div class="col-sm-10">
+														<input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com" />
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+					
+									<div class="card mb-3">
+										<div class="card-header">
+											<div class="row align-items-center">
+												<div class="col-md-6">
+													<h5 id="item-2">List of Previous Loans</h5>
+												</div>
+												<div class="col-md-6">
+													<div class="float-right">
+														<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-body">
+											<table class="table table-bordered table-striped">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">First</th>
+														<th scope="col">Last</th>
+														<th scope="col">Handle</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Mark</td>
+														<td>Otto</td>
+														<td>@mdo</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>Jacob</td>
+														<td>Thornton</td>
+														<td>@fat</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>Larry</td>
+														<td>the Bird</td>
+														<td>@twitter</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+					
+									<div class="card">
+										<div class="card-header">
+											<h5 id="item-3">Application Form</h5>
+										</div>
+										<div class="card-body">
+											<form>
+												<div class="form-group">
+													<label for="exampleInputEmail1">Email address</label>
+													<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+													<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword1">Password</label>
+													<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+												</div>
+												<div class="form-group form-check">
+													<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+													<label class="form-check-label" for="exampleCheck1">Check me out</label>
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+					</div>
+					<div class="col-md-3">
+							<nav id="sideNav-rgt" class="navbar navbar-light bg-light">
+									<nav class="nav nav-pills flex-column">
+										<a class="nav-link" href="#item-1">Biography</a>
+										<a class="nav-link" href="#item-2">List of previous loans</a>
+										<a class="nav-link" href="#item-3">Item Application</a>
+									</nav>
+								</nav>
+					</div>
 				</div>
 			</div>
+			
 
-
-			<div class="card">
-				<div class="card-header">
-					Application Form
-				</div>
-				<div class="card-body">
-					<form>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1"
-								aria-describedby="emailHelp" placeholder="Enter email">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-								else.</small>
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1"
-								placeholder="Password">
-						</div>
-						<div class="form-group form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Check me out</label>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
-				</div>
-			</div>
-
-
+			
 		</div>
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-
-</body>
-
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
